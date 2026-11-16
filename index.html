@@ -306,21 +306,66 @@
     <section class="pricing" id="pricing" aria-labelledby="pricing-title">
       <div class="wrap">
         <div class="pricing-frame">
-          <div class="pricing-inner">
-            <div>
-              <p class="kicker"><span class="lang-en">Pricing</span><span class="lang-es">Precios</span></p>
-              <h2 id="pricing-title">
-                <span class="lang-en">Pricing based on fleet size<br>and dispatcher count.</span>
-                <span class="lang-es">Los precios se basan en el tamaño de la flota<br>y el número de despachadores.</span>
-              </h2>
-              <p class="section-lead lang-en">There is no public rate card. Tell us about your operation, and we will walk you through a demo fitted to your team. Contact us to get started.</p>
-              <p class="section-lead lang-es">No publicamos una lista de tarifas. Cuéntenos sobre su operación y le presentaremos una demostración ajustada a su equipo. Contáctenos para comenzar.</p>
-            </div>
-            <a class="btn btn-gold" href="#contact">
-              <span class="lang-en">Request a demo</span>
-              <span class="lang-es">Solicitar una demostración</span>
-            </a>
+          <div class="pricing-head">
+            <p class="kicker"><span class="lang-en">Pricing</span><span class="lang-es">Precios</span></p>
+            <h2 id="pricing-title">
+              <span class="lang-en">Simple pricing by fleet size.</span>
+              <span class="lang-es">Precios simples según el tamaño de la flota.</span>
+            </h2>
+            <p class="section-lead lang-en">Month to month, no contract. Pick the plan that matches how many trucks you run.</p>
+            <p class="section-lead lang-es">Mes a mes, sin contrato. Elija el plan que corresponda al número de camiones que opera.</p>
           </div>
+
+          <div class="pricing-grid">
+            <article class="price-card">
+              <h3>Solo</h3>
+              <p class="price-who lang-en">1 truck</p>
+              <p class="price-who lang-es">1 camión</p>
+              <p class="price-amt">$39<span class="price-currency"> USD</span><span class="price-period lang-en"> / month</span><span class="price-period lang-es"> / mes</span></p>
+            </article>
+
+            <article class="price-card is-popular">
+              <p class="price-badge lang-en">Most popular</p>
+              <p class="price-badge lang-es">El más elegido</p>
+              <h3 class="lang-en">Small fleet</h3>
+              <h3 class="lang-es">Flota pequeña</h3>
+              <p class="price-who lang-en">2–7 trucks</p>
+              <p class="price-who lang-es">2–7 camiones</p>
+              <p class="price-amt">$69<span class="price-currency"> USD</span><span class="price-period lang-en"> / month</span><span class="price-period lang-es"> / mes</span></p>
+            </article>
+
+            <article class="price-card">
+              <h3 class="lang-en">Fleet</h3>
+              <h3 class="lang-es">Flota</h3>
+              <p class="price-who lang-en">8–20 trucks</p>
+              <p class="price-who lang-es">8–20 camiones</p>
+              <p class="price-amt">$199<span class="price-currency"> USD</span><span class="price-period lang-en"> / month</span><span class="price-period lang-es"> / mes</span></p>
+            </article>
+
+            <article class="price-card">
+              <h3 class="lang-en">21+ trucks</h3>
+              <h3 class="lang-es">21+ camiones</h3>
+              <p class="price-who lang-en">Larger fleets</p>
+              <p class="price-who lang-es">Flotas más grandes</p>
+              <p class="price-custom lang-en">Request a quote or a demo.</p>
+              <p class="price-custom lang-es">Solicite una cotización o una demostración.</p>
+              <p class="price-amt lang-en">Custom</p>
+              <p class="price-amt lang-es">Cotización</p>
+            </article>
+          </div>
+
+          <div class="pricing-offer">
+            <p class="lang-en"><strong>Founding offer:</strong> the first 15 carriers get 15% off for life, for as long as they stay subscribed.</p>
+            <p class="lang-es"><strong>Oferta para fundadores:</strong> los primeros 15 transportistas obtienen 15% de descuento de por vida, mientras permanezcan suscritos.</p>
+          </div>
+
+          <p class="pricing-note lang-en">You enter or paste your own loads — nothing is pulled in automatically yet. A load feed is coming soon.</p>
+          <p class="pricing-note lang-es">Usted ingresa o pega sus propias cargas; aún no se importan automáticamente. El feed de cargas estará disponible pronto.</p>
+
+          <a class="btn btn-gold pricing-cta" href="#contact">
+            <span class="lang-en">Request a demo</span>
+            <span class="lang-es">Solicitar una demostración</span>
+          </a>
         </div>
       </div>
     </section>
@@ -357,7 +402,7 @@
             <input id="phone" name="phone" type="tel" autocomplete="tel">
           </div>
           <div class="field full">
-            <label for="size"><span class="lang-en">Fleet size / dispatcher count <span style="text-transform:none;letter-spacing:0;color:var(--muted)">(optional)</span></span><span class="lang-es">Tamaño de flota / número de despachadores <span style="text-transform:none;letter-spacing:0;color:var(--muted)">(opcional)</span></span></label>
+            <label for="size"><span class="lang-en">Fleet size <span style="text-transform:none;letter-spacing:0;color:var(--muted)">(optional)</span></span><span class="lang-es">Tamaño de flota <span style="text-transform:none;letter-spacing:0;color:var(--muted)">(opcional)</span></span></label>
             <input id="size" name="size" type="text" autocomplete="off">
           </div>
           <div class="field full">

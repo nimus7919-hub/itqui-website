@@ -28,7 +28,7 @@
         company: "Company",
         email: "Email",
         phone: "Phone",
-        size: "Fleet size / dispatcher count",
+        size: "Fleet size",
         message: "Message"
       },
       sent: "Your email app should open with the request addressed to contacto@itqui.com.mx. If it does not, please write to us at that address."
@@ -47,7 +47,7 @@
         company: "Empresa",
         email: "Correo",
         phone: "Teléfono",
-        size: "Tamaño de flota / número de despachadores",
+        size: "Tamaño de flota",
         message: "Mensaje"
       },
       sent: "Su aplicación de correo debería abrirse con la solicitud dirigida a contacto@itqui.com.mx. Si no es así, escríbanos a esa dirección."
