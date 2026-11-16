@@ -3,15 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Itqui — Carrying your updates</title>
-  <meta name="description" content="Itqui is a dispatch bot that keeps your TMS or CRM updated from driver texts — status and location — so dispatchers spend less time chasing updates.">
+  <title>Itqui — Back-office software for owner-operators</title>
+  <meta name="description" content="Back-office software for U.S. owner-operators and small fleets. Type in booked loads or paste the text from your rate confirmation; Itqui keeps the books. Custom setups for fleets with dispatchers.">
   <meta name="theme-color" content="#0B0B0B">
-  <meta property="og:title" content="Itqui — Carrying your updates">
-  <meta property="og:description" content="A dispatch bot that carries status and location updates from driver texts into your TMS or CRM.">
+  <meta property="og:title" content="Itqui — Back-office software for owner-operators">
+  <meta property="og:description" content="Back-office software for U.S. owner-operators and small fleets. Enter the loads you’ve booked; Itqui keeps the books. Custom setups for fleets with dispatchers.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="es_MX">
   <meta property="og:image" content="assets/itqui-black-gold-en.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Itqui — Back-office software for owner-operators">
+  <meta name="twitter:description" content="Back-office software for U.S. owner-operators and small fleets. Enter the loads you’ve booked; Itqui keeps the books. Custom setups for fleets with dispatchers.">
   <link rel="icon" href="assets/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -25,13 +28,13 @@
         document.documentElement.lang = lang;
         document.documentElement.setAttribute("data-lang", lang);
         if (lang === "es") {
-          document.title = "Itqui — Llevamos tus actualizaciones";
+          document.title = "Itqui — Software de back office para transportistas independientes";
         }
       } catch (e) {}
     })();
   </script>
 </head>
-<body id="top">
+<body id="top" data-page="home">
   <a class="skip" href="#main">
     <span class="lang-en">Skip to content</span>
     <span class="lang-es">Saltar al contenido</span>
@@ -43,11 +46,9 @@
         <img src="assets/logo-nav.png" width="700" height="194" alt="Itqui">
       </a>
       <nav class="nav" id="site-nav" aria-label="Primary">
-        <a href="#problem"><span class="lang-en">Problem</span><span class="lang-es">El problema</span></a>
-        <a href="#how"><span class="lang-en">How it works</span><span class="lang-es">Cómo funciona</span></a>
-        <a href="#benefits"><span class="lang-en">Benefits</span><span class="lang-es">Beneficios</span></a>
-        <a href="#integrations"><span class="lang-en">Integrations</span><span class="lang-es">Integraciones</span></a>
+        <a href="#owner"><span class="lang-en">How it works</span><span class="lang-es">Cómo funciona</span></a>
         <a href="#pricing"><span class="lang-en">Pricing</span><span class="lang-es">Precios</span></a>
+        <a href="#carriers"><span class="lang-en">For carriers</span><span class="lang-es">Para transportistas</span></a>
         <a href="#contact"><span class="lang-en">Contact</span><span class="lang-es">Contacto</span></a>
       </nav>
       <div class="lang-toggle" role="group" aria-label="Language">
@@ -73,21 +74,43 @@
           <p class="meaning lang-en">From Nahuatl, “to carry.” Pronounced EET-kee.</p>
           <p class="meaning lang-es">Del náhuatl, «llevar». Se pronuncia EET-kee.</p>
           <h1 id="hero-title">
-            <span class="lang-en">Your dispatch board,<br>kept current<br>from the road.</span>
-            <span class="lang-es">Su tablero de despacho,<br>al día desde la carretera.</span>
+            <span class="lang-en">Your books, kept current<br>from the loads<br>you already booked.</span>
+            <span class="lang-es">Su contabilidad, al día<br>con las cargas<br>que ya contrató.</span>
           </h1>
-          <p class="lead lang-en">Itqui is a dispatch bot that reads driver texts — status and location — and writes them into your TMS or CRM, automatically. Scheduled check-ins go out on your cadence, so dispatchers spend less time chasing updates and more time on the work that needs a person.</p>
-          <p class="lead lang-es">Itqui es un bot de despacho que lee los mensajes de sus conductores — estatus y ubicación — y los registra automáticamente en su TMS o CRM. Los seguimientos programados salen en el horario que usted defina, para que los despachadores dediquen menos tiempo a perseguir actualizaciones y más al trabajo que requiere a una persona.</p>
+          <p class="lead lang-en">Itqui is back-office software for U.S. owner-operators and small fleets. It is not a dispatch service and does not find loads. Type in the loads you’ve booked and are hauling, or paste the text from your rate confirmation, and Itqui keeps the books.</p>
+          <p class="lead lang-es">Itqui es software de back office para transportistas independientes y flotas pequeñas en Estados Unidos. No es un servicio de despacho y no busca cargas. Escriba las cargas que ya contrató y está transportando, o pegue el texto de la confirmación de tarifa, y Itqui lleva la contabilidad.</p>
           <div class="actions">
             <a class="btn btn-gold" href="#contact">
               <span class="lang-en">Request a demo</span>
               <span class="lang-es">Solicitar una demostración</span>
             </a>
-            <a class="btn btn-ghost" href="#how">
-              <span class="lang-en">See how it works</span>
-              <span class="lang-es">Vea cómo funciona</span>
+            <a class="btn btn-ghost" href="#pricing">
+              <span class="lang-en">See plans</span>
+              <span class="lang-es">Ver planes</span>
             </a>
           </div>
+          <nav class="offer-cards" aria-label="Choose an offering">
+            <a class="offer-card" href="#owner">
+              <p class="offer-kicker"><span class="lang-en">For owner-operators</span><span class="lang-es">Para transportistas independientes</span></p>
+              <h2>
+                <span class="lang-en">Owner-operators</span>
+                <span class="lang-es">Transportistas independientes</span>
+              </h2>
+              <p class="lang-en">A private dashboard of each truck’s gross, loads, RPM and month-end projection. Enter the loads you’ve booked. Plans from $39 a month.</p>
+              <p class="lang-es">Un tablero privado con el ingreso bruto, las cargas, el RPM y la proyección a fin de mes de cada camión. Usted ingresa las cargas que ya contrató. Planes desde $39 al mes.</p>
+              <p class="offer-go"><span class="lang-en">See how it works</span><span class="lang-es">Vea cómo funciona</span></p>
+            </a>
+            <a class="offer-card" href="#carriers">
+              <p class="offer-kicker"><span class="lang-en">For fleets</span><span class="lang-es">Para flotas</span></p>
+              <h2>
+                <span class="lang-en">Carriers / fleets with dispatchers</span>
+                <span class="lang-es">Transportistas / flotas con despachadores</span>
+              </h2>
+              <p class="lang-en">A custom setup for fleets with several trucks. Custom quote.</p>
+              <p class="lang-es">Una configuración a la medida para flotas con varios camiones. Cotización personalizada.</p>
+              <p class="offer-go"><span class="lang-en">See carrier services</span><span class="lang-es">Ver servicios para transportistas</span></p>
+            </a>
+          </nav>
         </div>
       </div>
     </section>
@@ -100,23 +123,24 @@
       </p>
     </div>
 
+    <div id="owner">
     <section class="section" id="problem" aria-labelledby="problem-title">
       <div class="wrap">
         <div class="section-head">
           <p class="kicker"><span class="lang-en">The problem</span><span class="lang-es">El problema</span></p>
           <h2 id="problem-title">
-            <span class="lang-en">When updates live in a text thread, the board falls behind.</span>
-            <span class="lang-es">Cuando las actualizaciones viven en un hilo de mensajes, el tablero se queda atrás.</span>
+            <span class="lang-en">The load is booked. The books still have to be kept.</span>
+            <span class="lang-es">La carga ya está contratada. La contabilidad aún hay que llevarla.</span>
           </h2>
         </div>
         <div class="problem-panel">
           <div>
-            <p class="lang-en">Drivers already tell you where they are and what they can take. Someone still has to read each reply, interpret it, and type it into the system.</p>
-            <p class="lang-es">Los conductores ya le dicen dónde están y qué pueden tomar. Aun así, alguien tiene que leer cada respuesta, interpretarla y capturarla en el sistema.</p>
+            <p class="lang-en">You already have the freight and you’re hauling it. Someone still has to enter each load, track what every truck is making, and see where the month is headed.</p>
+            <p class="lang-es">Usted ya tiene el flete y lo está transportando. Aun así, alguien tiene que registrar cada carga, seguir lo que gana cada camión y ver hacia dónde va el mes.</p>
           </div>
           <div>
-            <p class="lang-en">When the office is busy, those updates wait. The board goes stale, and decisions get made on an outdated picture of the fleet.</p>
-            <p class="lang-es">Cuando la oficina está ocupada, esas actualizaciones esperan. El tablero se desactualiza, y las decisiones se toman con una imagen atrasada de la flota.</p>
+            <p class="lang-en">When that work lives in a notebook or a spreadsheet, the numbers go stale, and it’s harder to see each truck clearly.</p>
+            <p class="lang-es">Cuando ese trabajo vive en un cuaderno o en una hoja de cálculo, las cifras se desactualizan y es más difícil ver cada camión con claridad.</p>
           </div>
         </div>
       </div>
@@ -127,36 +151,36 @@
         <div class="section-head">
           <p class="kicker"><span class="lang-en">How it works</span><span class="lang-es">Cómo funciona</span></p>
           <h2 id="how-title">
-            <span class="lang-en">From a driver’s text<br>to a confirmed update.</span>
-            <span class="lang-es">Del mensaje del conductor a una actualización confirmada.</span>
+            <span class="lang-en">From a booked load<br>to books that stay current.</span>
+            <span class="lang-es">De una carga ya contratada a una contabilidad al día.</span>
           </h2>
-          <p class="section-lead lang-en">Four steps. The same work your desk already does — carried into your system with care.</p>
-          <p class="section-lead lang-es">Cuatro pasos. El mismo trabajo que ya hace su mesa de despacho, llevado a su sistema con cuidado.</p>
+          <p class="section-lead lang-en">You enter the loads you’ve booked and are hauling. Itqui keeps the books — in a private, mobile-first dashboard.</p>
+          <p class="section-lead lang-es">Usted ingresa las cargas que ya contrató y está transportando. Itqui lleva la contabilidad, en un tablero privado pensado primero para el celular.</p>
         </div>
         <div class="steps">
           <article class="step">
-            <h3 class="lang-en">Drivers reply by text</h3>
-            <h3 class="lang-es">Los conductores responden por mensaje</h3>
-            <p class="lang-en">Status and location, in English or Spanish — in the same messages they already send.</p>
-            <p class="lang-es">Estatus y ubicación, en español o en inglés, en los mismos mensajes que ya envían.</p>
+            <h3 class="lang-en">Enter your booked loads</h3>
+            <h3 class="lang-es">Ingrese las cargas que ya contrató</h3>
+            <p class="lang-en">Type them in, or paste the text from your rate confirmation.</p>
+            <p class="lang-es">Escríbalas, o pegue el texto de la confirmación de tarifa.</p>
           </article>
           <article class="step">
-            <h3 class="lang-en">Itqui reads the reply</h3>
-            <h3 class="lang-es">Itqui lee la respuesta</h3>
-            <p class="lang-en">The bot logs the update. Unclear or incomplete replies are held for a dispatcher, not guessed.</p>
-            <p class="lang-es">El bot registra la actualización. Las respuestas poco claras o incompletas se retienen para un despachador; no se adivinan.</p>
+            <h3 class="lang-en">Review and save</h3>
+            <h3 class="lang-es">Revise y guarde</h3>
+            <p class="lang-en">Itqui splits them into rows you review and save with one tap, including the broker MC.</p>
+            <p class="lang-es">Itqui las divide en filas para que las revise y las guarde con un toque, incluido el MC del broker.</p>
           </article>
           <article class="step">
-            <h3 class="lang-en">Your system is updated — and confirmed</h3>
-            <h3 class="lang-es">Su sistema se actualiza, y se confirma</h3>
-            <p class="lang-en">The change is written to your TMS or CRM, then read back to confirm it took.</p>
-            <p class="lang-es">El cambio se escribe en su TMS o CRM y luego se lee de vuelta para confirmar que quedó registrado.</p>
+            <h3 class="lang-en">See each truck clearly</h3>
+            <h3 class="lang-es">Vea cada camión con claridad</h3>
+            <p class="lang-en">A private mobile-first dashboard shows each truck’s gross, loads, RPM and month-end projection.</p>
+            <p class="lang-es">Un tablero privado, pensado primero para el celular, muestra el ingreso bruto, las cargas, el RPM y la proyección a fin de mes de cada camión.</p>
           </article>
           <article class="step">
-            <h3 class="lang-en">Check-ins run on your schedule</h3>
-            <h3 class="lang-es">Los seguimientos salen en su horario</h3>
-            <p class="lang-en">Automated follow-ups go out on the days and times you set, even when the desk is full.</p>
-            <p class="lang-es">Los seguimientos automáticos salen en los días y horarios que usted defina, incluso cuando la mesa está llena.</p>
+            <h3 class="lang-en">Check-ins in English and Spanish</h3>
+            <h3 class="lang-es">Check-ins en inglés y en español</h3>
+            <p class="lang-en">Bilingual driver check-ins, so the office and the road can work in either language.</p>
+            <p class="lang-es">Check-ins bilingües de los conductores, para que la oficina y la carretera puedan trabajar en cualquiera de los dos idiomas.</p>
           </article>
         </div>
       </div>
@@ -165,143 +189,35 @@
     <section class="section" id="benefits" aria-labelledby="benefits-title">
       <div class="wrap">
         <div class="section-head">
-          <p class="kicker"><span class="lang-en">Benefits</span><span class="lang-es">Beneficios</span></p>
+          <p class="kicker"><span class="lang-en">What you get</span><span class="lang-es">Lo que incluye</span></p>
           <h2 id="benefits-title">
-            <span class="lang-en">Time back for the work<br>that needs a person.</span>
-            <span class="lang-es">Tiempo de vuelta para el trabajo que necesita a una persona.</span>
+            <span class="lang-en">A private board for the work you already have.</span>
+            <span class="lang-es">Un tablero privado para el trabajo que usted ya tiene.</span>
           </h2>
         </div>
-        <div class="benefits">
+        <div class="benefits benefits-3">
           <article class="benefit">
-            <h3 class="lang-en">Less typing, more dispatching</h3>
-            <h3 class="lang-es">Menos captura, más despacho</h3>
-            <p class="lang-en">Routine status and location updates no longer have to be copied into the system by hand.</p>
-            <p class="lang-es">Las actualizaciones rutinarias de estatus y ubicación ya no tienen que copiarse al sistema a mano.</p>
+            <h3 class="lang-en">A dashboard for every truck</h3>
+            <h3 class="lang-es">Un tablero para cada camión</h3>
+            <p class="lang-en">A private, mobile-first dashboard with each truck’s gross, loads, RPM and month-end projection.</p>
+            <p class="lang-es">Un tablero privado, pensado primero para el celular, con el ingreso bruto, las cargas, el RPM y la proyección a fin de mes de cada camión.</p>
           </article>
           <article class="benefit">
-            <h3 class="lang-en">A board that stays closer to the road</h3>
-            <h3 class="lang-es">Un tablero más cerca de la carretera</h3>
-            <p class="lang-en">Updates land in your system as drivers reply, so the picture on the board is more current.</p>
-            <p class="lang-es">Las actualizaciones llegan a su sistema conforme responden los conductores, y el tablero queda más al día.</p>
+            <h3 class="lang-en">Add several booked loads at once</h3>
+            <h3 class="lang-es">Agregue varias cargas de una vez</h3>
+            <p class="lang-en">Type in your booked loads or paste the text from your rate confirmation; Itqui splits it into rows you review and save with one tap, including the broker MC.</p>
+            <p class="lang-es">Escriba las cargas que ya contrató o pegue el texto de la confirmación de tarifa; Itqui lo divide en filas para que las revise y las guarde con un toque, incluido el MC del broker.</p>
           </article>
           <article class="benefit">
-            <h3 class="lang-en">Check-ins that don’t slip</h3>
-            <h3 class="lang-es">Seguimientos que no se posponen</h3>
-            <p class="lang-en">Scheduled messages go out on the cadence you choose, without someone having to remember every unit.</p>
-            <p class="lang-es">Los mensajes programados salen en el ritmo que usted elija, sin que alguien tenga que recordar cada unidad.</p>
-          </article>
-          <article class="benefit">
-            <h3 class="lang-en">Careful with incomplete answers</h3>
-            <h3 class="lang-es">Cuidado con las respuestas incompletas</h3>
-            <p class="lang-en">If a reply is ambiguous, or only a state was given when a city is needed, the bot holds it for a person.</p>
-            <p class="lang-es">Si una respuesta es ambigua, o solo se indicó el estado cuando se necesita la ciudad, el bot la retiene para una persona.</p>
+            <h3 class="lang-en">Bilingual driver check-ins</h3>
+            <h3 class="lang-es">Check-ins bilingües de conductores</h3>
+            <p class="lang-en">Drivers can check in in English or Spanish, without a separate process for each language.</p>
+            <p class="lang-es">Los conductores pueden reportarse en inglés o en español, sin un proceso aparte para cada idioma.</p>
           </article>
         </div>
       </div>
     </section>
-
-    <section class="section alt" id="integrations" aria-labelledby="integrations-title">
-      <div class="wrap">
-        <div class="section-head integrations-intro">
-          <p class="kicker"><span class="lang-en">Integrations</span><span class="lang-es">Integraciones</span></p>
-          <h2 id="integrations-title">
-            <span class="lang-en">Built to work with your<br>TMS or CRM.</span>
-            <span class="lang-es">Hecho para trabajar con su TMS o CRM.</span>
-          </h2>
-          <p class="section-lead lang-en">Itqui is not tied to a single dispatch platform. The current connection is one integration; the bot is built to adapt to the tools you already use. Getting started means connecting Itqui to your own system and confirming that writes land correctly.</p>
-          <p class="section-lead lang-es">Itqui no está atado a una sola plataforma de despacho. La conexión actual es una integración; el bot está hecho para adaptarse a las herramientas que usted ya usa. Empezar implica conectar Itqui a su propio sistema y confirmar que los registros quedan bien guardados.</p>
-        </div>
-        <div class="connect">
-          <article>
-            <h3 class="lang-en">Web dispatch portal</h3>
-            <h3 class="lang-es">Portal web de despacho</h3>
-            <p class="lang-en">Connect through the dispatch site your team already works in, and keep the same board your dispatchers see.</p>
-            <p class="lang-es">Conéctese a través del sitio de despacho en el que su equipo ya trabaja, y conserve el mismo tablero que ven sus despachadores.</p>
-          </article>
-          <article>
-            <h3>API</h3>
-            <p class="lang-en">Where your system offers an interface, Itqui can write and confirm updates directly.</p>
-            <p class="lang-es">Cuando su sistema ofrece una interfaz, Itqui puede escribir y confirmar las actualizaciones de forma directa.</p>
-          </article>
-          <article>
-            <h3 class="lang-en">Spreadsheet</h3>
-            <h3 class="lang-es">Hoja de cálculo</h3>
-            <p class="lang-en">A shared sheet can be enough to start, then move to a fuller integration when you are ready.</p>
-            <p class="lang-es">Una hoja compartida puede bastar para comenzar, y pasar a una integración más completa cuando usted lo decida.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="configure" aria-labelledby="configure-title">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="kicker"><span class="lang-en">Configuration</span><span class="lang-es">Configuración</span></p>
-          <h2 id="configure-title">
-            <span class="lang-en">Set up to match the way you already work.</span>
-            <span class="lang-es">Se configura al modo en que usted ya trabaja.</span>
-          </h2>
-          <p class="section-lead lang-en">The bot is fitted to your operation — what is asked, when it is asked, and how carefully incomplete replies are handled.</p>
-          <p class="section-lead lang-es">El bot se ajusta a su operación: qué se pregunta, cuándo se pregunta, y con qué cuidado se tratan las respuestas incompletas.</p>
-        </div>
-        <div class="config-grid">
-          <article class="config-item">
-            <span class="config-mark" aria-hidden="true"></span>
-            <div>
-              <h3 class="lang-en">Check-in schedule</h3>
-              <h3 class="lang-es">Horario de seguimientos</h3>
-              <p class="lang-en">Days, times, and follow-ups — set to the cadence your fleet actually needs.</p>
-              <p class="lang-es">Días, horarios y recordatorios, ajustados al ritmo que su flota realmente necesita.</p>
-            </div>
-          </article>
-          <article class="config-item">
-            <span class="config-mark" aria-hidden="true"></span>
-            <div>
-              <h3 class="lang-en">What gets asked</h3>
-              <h3 class="lang-es">Qué se pregunta</h3>
-              <p class="lang-en">The wording of check-ins, and how status and location replies are read.</p>
-              <p class="lang-es">El texto de los seguimientos, y cómo se leen las respuestas de estatus y ubicación.</p>
-            </div>
-          </article>
-          <article class="config-item">
-            <span class="config-mark" aria-hidden="true"></span>
-            <div>
-              <h3 class="lang-en">Review queue</h3>
-              <h3 class="lang-es">Cola de revisión</h3>
-              <p class="lang-en">Unclear, incomplete, or multi-unit messages wait for a dispatcher instead of being guessed.</p>
-              <p class="lang-es">Los mensajes poco claros, incompletos o de varias unidades esperan a un despachador en lugar de adivinarse.</p>
-            </div>
-          </article>
-          <article class="config-item">
-            <span class="config-mark" aria-hidden="true"></span>
-            <div>
-              <h3 class="lang-en">English and Spanish</h3>
-              <h3 class="lang-es">Español e inglés</h3>
-              <p class="lang-en">Driver replies are read in both languages, without a separate process for each.</p>
-              <p class="lang-es">Las respuestas de los conductores se leen en ambos idiomas, sin un proceso aparte para cada uno.</p>
-            </div>
-          </article>
-          <article class="config-item">
-            <span class="config-mark" aria-hidden="true"></span>
-            <div>
-              <h3 class="lang-en">Confirm after every write</h3>
-              <h3 class="lang-es">Confirmar después de cada registro</h3>
-              <p class="lang-en">The record is read back after it is saved, so an update is only treated as done once it is in the system.</p>
-              <p class="lang-es">El registro se lee de vuelta después de guardarse, de modo que una actualización solo se da por hecha cuando ya está en el sistema.</p>
-            </div>
-          </article>
-          <article class="config-item">
-            <span class="config-mark" aria-hidden="true"></span>
-            <div>
-              <h3 class="lang-en">Safety rules</h3>
-              <h3 class="lang-es">Reglas de seguridad</h3>
-              <p class="lang-en">The bot does not invent a city or postal code when the driver only gave a state. If your system needs a signed-in session, writes wait until someone is signed in.</p>
-              <p class="lang-es">El bot no inventa una ciudad o un código postal cuando el conductor solo indicó el estado. Si su sistema necesita una sesión iniciada, las escrituras esperan hasta que alguien ingrese.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+    </div>
 
     <section class="pricing" id="pricing" aria-labelledby="pricing-title">
       <div class="wrap">
@@ -359,12 +275,36 @@
             <p class="lang-es"><strong>Oferta para fundadores:</strong> los primeros 15 transportistas obtienen 15% de descuento de por vida, mientras permanezcan suscritos.</p>
           </div>
 
-          <p class="pricing-note lang-en">You enter your own booked loads; nothing is automatic. Paste a screenshot or the text of your loads and Itqui reads it into rows you review and save.</p>
-          <p class="pricing-note lang-es">Usted ingresa las cargas que ya contrató o está transportando; nada es automático. Pegue una captura o el texto de sus cargas y Itqui las lee y las convierte en filas para que las revise y las guarde.</p>
+          <p class="pricing-note lang-en">Type in your booked loads or paste the text from your rate confirmation; Itqui splits it into rows you review and save.</p>
+          <p class="pricing-note lang-es">Escriba las cargas que ya contrató o pegue el texto de la confirmación de tarifa; Itqui las divide en filas para que las revise y las guarde.</p>
 
           <a class="btn btn-gold pricing-cta" href="#contact">
             <span class="lang-en">Request a demo</span>
             <span class="lang-es">Solicitar una demostración</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="carriers" aria-labelledby="carriers-title">
+      <div class="wrap carriers-band">
+        <div class="section-head">
+          <p class="kicker"><span class="lang-en">Carrier services</span><span class="lang-es">Servicios para transportistas</span></p>
+          <h2 id="carriers-title">
+            <span class="lang-en">For fleets with multiple trucks and dispatchers.</span>
+            <span class="lang-es">Para flotas con varios camiones y despachadores.</span>
+          </h2>
+          <p class="section-lead lang-en">This is a custom setup. We connect to however your fleet already gets driver text messages, attach our bot, and integrate it into your system so your drivers and records stay updated. Pricing is a custom quote.</p>
+          <p class="section-lead lang-es">Es una configuración a la medida. Nos conectamos a la forma en que su flota ya recibe los mensajes de texto de los conductores, instalamos nuestro bot y lo integramos a su sistema para que sus conductores y sus registros se mantengan actualizados. El precio es una cotización personalizada.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-gold" href="#contact">
+            <span class="lang-en">Request a demo</span>
+            <span class="lang-es">Solicitar una demostración</span>
+          </a>
+          <a class="btn btn-ghost" href="carriers.html">
+            <span class="lang-en">See how it works</span>
+            <span class="lang-es">Vea cómo funciona</span>
           </a>
         </div>
       </div>
@@ -378,8 +318,8 @@
             <span class="lang-en">Request a demo</span>
             <span class="lang-es">Solicite una demostración</span>
           </h2>
-          <p class="lang-en">Write to us and tell us a little about your fleet and your dispatch desk. We will follow up by email.</p>
-          <p class="lang-es">Escríbanos y cuéntenos un poco sobre su flota y su mesa de despacho. Le responderemos por correo.</p>
+          <p class="lang-en">Write to us and tell us a little about your fleet. We will follow up by email.</p>
+          <p class="lang-es">Escríbanos y cuéntenos un poco sobre su flota. Le responderemos por correo.</p>
           <a class="contact-email" href="mailto:contacto@itqui.com.mx">contacto@itqui.com.mx</a>
           <p class="place">Querétaro, México</p>
         </aside>
@@ -433,6 +373,7 @@
         <p class="footer-meta lang-en">Itqui — from Nahuatl, “to carry.” Pronounced EET-kee.</p>
         <p class="footer-meta lang-es">Itqui — del náhuatl, «llevar». Se pronuncia EET-kee.</p>
         <p class="footer-meta">Querétaro, México · <a href="mailto:contacto@itqui.com.mx">contacto@itqui.com.mx</a></p>
+        <p class="footer-meta"><a href="carriers.html"><span class="lang-en">Carrier services</span><span class="lang-es">Servicios para transportistas</span></a></p>
       </div>
       <p class="footer-legal">© 2026 Itqui</p>
     </div>

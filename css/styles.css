@@ -511,6 +511,80 @@ h3 {
   color: var(--muted);
   font-size: 0.98rem;
 }
+@media (min-width: 900px) {
+  .benefits-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Offering picker in the hero */
+.offer-cards {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2.25rem;
+}
+@media (min-width: 640px) {
+  .offer-cards { grid-template-columns: 1fr 1fr; }
+}
+.offer-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1.2rem 1.15rem;
+  border: 1px solid var(--line-soft);
+  background: var(--panel);
+  color: inherit;
+  text-decoration: none;
+  min-height: 100%;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.offer-card:hover {
+  border-color: var(--gold);
+  color: inherit;
+  background: #1b1b1b;
+}
+.offer-kicker {
+  margin: 0 0 0.55rem;
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.offer-card h2 {
+  margin: 0 0 0.55rem;
+  font-size: 1.45rem;
+  line-height: 1.2;
+}
+.offer-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+.offer-card .offer-go {
+  margin-top: auto;
+  padding-top: 0.95rem;
+  color: var(--gold);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.offer-card:hover .offer-go { color: var(--gold-bright); }
+
+.hero:has(.offer-cards) {
+  min-height: 0;
+  align-items: flex-start;
+}
+.hero-copy:has(.offer-cards) { max-width: 44rem; }
+
+.hero-alt {
+  margin: 1.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.hero-alt a { text-underline-offset: 0.15em; text-decoration: underline; }
+
+.carriers-band .section-head { margin-bottom: 1.5rem; }
+.carriers-band .actions { margin-top: 0; }
 
 /* Integrations */
 .integrations-intro { margin-bottom: 2rem; }

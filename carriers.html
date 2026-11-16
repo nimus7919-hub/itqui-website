@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Itqui — Custom setup for fleets with dispatchers</title>
+  <meta name="description" content="A custom setup for fleets with multiple trucks and dispatchers. We connect to how you already get driver text messages, attach our bot, and integrate it into your system. Custom quote.">
+  <meta name="theme-color" content="#0B0B0B">
+  <meta property="og:title" content="Itqui — Custom setup for fleets with dispatchers">
+  <meta property="og:description" content="A custom setup for fleets with dispatchers: we connect to how you already get driver texts, attach our bot, and integrate it into your system. Custom quote.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_MX">
+  <meta property="og:image" content="assets/itqui-black-gold-en.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Itqui — Custom setup for fleets with dispatchers">
+  <meta name="twitter:description" content="A custom setup for fleets with dispatchers: we connect to how you already get driver texts, attach our bot, and integrate it into your system. Custom quote.">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      try {
+        var q = new URLSearchParams(location.search).get("lang");
+        var lang = (q === "es" || q === "en") ? q : (localStorage.getItem("itqui-lang") || "en");
+        if (lang !== "es") lang = "en";
+        document.documentElement.lang = lang;
+        document.documentElement.setAttribute("data-lang", lang);
+        if (lang === "es") {
+          document.title = "Itqui — Configuración a la medida para flotas con despachadores";
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body id="top" data-page="carriers">
+  <a class="skip" href="#main">
+    <span class="lang-en">Skip to content</span>
+    <span class="lang-es">Saltar al contenido</span>
+  </a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-nav.png" width="700" height="194" alt="Itqui">
+      </a>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <a href="index.html#owner"><span class="lang-en">Owner-operators</span><span class="lang-es">Transportistas independientes</span></a>
+        <a href="#how"><span class="lang-en">How it works</span><span class="lang-es">Cómo funciona</span></a>
+        <a href="#pricing"><span class="lang-en">Pricing</span><span class="lang-es">Precios</span></a>
+        <a href="#contact"><span class="lang-en">Contact</span><span class="lang-es">Contacto</span></a>
+      </nav>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-set-lang="es" aria-pressed="false">ES</button>
+      </div>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span class="lang-en visually-hidden">Menu</span>
+        <span class="lang-es visually-hidden">Menú</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-brand">
+          <img class="hero-lockup lang-en" src="assets/logo-lockup-en.png" width="582" height="570" alt="Itqui — Carrying your updates">
+          <img class="hero-lockup lang-es" src="assets/logo-lockup-es.png" width="613" height="575" alt="Itqui — Llevamos tus actualizaciones">
+        </div>
+        <div class="hero-copy">
+          <p class="meaning lang-en">From Nahuatl, “to carry.” Pronounced EET-kee.</p>
+          <p class="meaning lang-es">Del náhuatl, «llevar». Se pronuncia EET-kee.</p>
+          <p class="kicker"><span class="lang-en">Carrier services</span><span class="lang-es">Servicios para transportistas</span></p>
+          <h1 id="hero-title">
+            <span class="lang-en">A custom setup<br>for fleets with<br>dispatchers.</span>
+            <span class="lang-es">Una configuración a la medida<br>para flotas con<br>despachadores.</span>
+          </h1>
+          <p class="lead lang-en">For fleets with multiple trucks and a dispatch desk, Itqui is a custom setup. We connect to however you already get driver text messages, attach our bot, and integrate it into your system so your drivers and records stay updated. Pricing is a custom quote.</p>
+          <p class="lead lang-es">Para flotas con varios camiones y una mesa de despacho, Itqui es una configuración a la medida. Nos conectamos a la forma en que usted ya recibe los mensajes de texto de los conductores, instalamos nuestro bot y lo integramos a su sistema para que sus conductores y sus registros se mantengan actualizados. El precio es una cotización personalizada.</p>
+          <div class="actions">
+            <a class="btn btn-gold" href="#contact">
+              <span class="lang-en">Request a demo</span>
+              <span class="lang-es">Solicitar una demostración</span>
+            </a>
+            <a class="btn btn-ghost" href="#how">
+              <span class="lang-en">See how it works</span>
+              <span class="lang-es">Vea cómo funciona</span>
+            </a>
+          </div>
+          <p class="hero-alt lang-en">Looking for back-office software for owner-operators? <a href="index.html">See owner-operator plans</a>.</p>
+          <p class="hero-alt lang-es">¿Busca software de back office para transportistas independientes? <a href="index.html">Vea los planes para transportistas independientes</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap" aria-hidden="true">
+      <p class="ornament">
+        <svg width="22" height="10" viewBox="0 0 22 10" fill="none">
+          <path d="M1 5h6l2-4 2 8 2-8 2 4h6" stroke="#C9A24A" stroke-width="1"/>
+        </svg>
+      </p>
+    </div>
+
+    <section class="section" id="problem" aria-labelledby="problem-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker"><span class="lang-en">The problem</span><span class="lang-es">El problema</span></p>
+          <h2 id="problem-title">
+            <span class="lang-en">When updates live in a text thread, the board falls behind.</span>
+            <span class="lang-es">Cuando las actualizaciones viven en un hilo de mensajes, el tablero se queda atrás.</span>
+          </h2>
+        </div>
+        <div class="problem-panel">
+          <div>
+            <p class="lang-en">Drivers already tell you where they are and what they can take. Someone still has to read each reply, interpret it, and type it into the system.</p>
+            <p class="lang-es">Los conductores ya le dicen dónde están y qué pueden tomar. Aun así, alguien tiene que leer cada respuesta, interpretarla y capturarla en el sistema.</p>
+          </div>
+          <div>
+            <p class="lang-en">When the office is busy, those updates wait. The board goes stale, and decisions get made on an outdated picture of the fleet.</p>
+            <p class="lang-es">Cuando la oficina está ocupada, esas actualizaciones esperan. El tablero se desactualiza, y las decisiones se toman con una visión atrasada de la flota.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker"><span class="lang-en">How it works</span><span class="lang-es">Cómo funciona</span></p>
+          <h2 id="how-title">
+            <span class="lang-en">From a driver’s text<br>to a confirmed update.</span>
+            <span class="lang-es">Del mensaje del conductor a una actualización confirmada.</span>
+          </h2>
+          <p class="section-lead lang-en">Four steps. We attach our bot to the way your fleet already gets driver texts, and carry that work into your system with care.</p>
+          <p class="section-lead lang-es">Cuatro pasos. Instalamos nuestro bot en la forma en que su flota ya recibe los mensajes de los conductores, y llevamos ese trabajo a su sistema con cuidado.</p>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <h3 class="lang-en">Drivers reply by text</h3>
+            <h3 class="lang-es">Los conductores responden por mensaje</h3>
+            <p class="lang-en">Status and location, in English or Spanish — in the same messages they already send.</p>
+            <p class="lang-es">Estatus y ubicación, en español o en inglés, en los mismos mensajes que ya envían.</p>
+          </article>
+          <article class="step">
+            <h3 class="lang-en">Itqui reads the reply</h3>
+            <h3 class="lang-es">Itqui lee la respuesta</h3>
+            <p class="lang-en">The bot logs the update. Unclear or incomplete replies are held for a dispatcher, not guessed.</p>
+            <p class="lang-es">El bot registra la actualización. Las respuestas poco claras o incompletas se retienen para un despachador; no se adivinan.</p>
+          </article>
+          <article class="step">
+            <h3 class="lang-en">Your system is updated — and confirmed</h3>
+            <h3 class="lang-es">Su sistema se actualiza, y se confirma</h3>
+            <p class="lang-en">The change is written to your system, then read back to confirm it took.</p>
+            <p class="lang-es">El cambio se escribe en su sistema y luego se lee de vuelta para confirmar que quedó registrado.</p>
+          </article>
+          <article class="step">
+            <h3 class="lang-en">Check-ins run on your schedule</h3>
+            <h3 class="lang-es">Los seguimientos salen en su horario</h3>
+            <p class="lang-en">Automated follow-ups go out on the days and times you set, even when the desk is full.</p>
+            <p class="lang-es">Los seguimientos automáticos salen en los días y horarios que usted defina, incluso cuando la mesa está llena.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="benefits" aria-labelledby="benefits-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker"><span class="lang-en">Benefits</span><span class="lang-es">Beneficios</span></p>
+          <h2 id="benefits-title">
+            <span class="lang-en">Time back for the work<br>that needs a person.</span>
+            <span class="lang-es">Tiempo de vuelta para el trabajo que necesita a una persona.</span>
+          </h2>
+        </div>
+        <div class="benefits">
+          <article class="benefit">
+            <h3 class="lang-en">Less typing, more time for the desk</h3>
+            <h3 class="lang-es">Menos captura, más tiempo para la mesa</h3>
+            <p class="lang-en">Routine status and location updates no longer have to be copied into the system by hand.</p>
+            <p class="lang-es">Las actualizaciones rutinarias de estatus y ubicación ya no tienen que copiarse al sistema a mano.</p>
+          </article>
+          <article class="benefit">
+            <h3 class="lang-en">A board that stays closer to the road</h3>
+            <h3 class="lang-es">Un tablero más cerca de la carretera</h3>
+            <p class="lang-en">Updates land in your system as drivers reply, so the picture on the board is more current.</p>
+            <p class="lang-es">Las actualizaciones llegan a su sistema conforme responden los conductores, y el tablero queda más al día.</p>
+          </article>
+          <article class="benefit">
+            <h3 class="lang-en">Check-ins that don’t slip</h3>
+            <h3 class="lang-es">Seguimientos que no se posponen</h3>
+            <p class="lang-en">Scheduled messages go out on the cadence you choose, without someone having to remember every unit.</p>
+            <p class="lang-es">Los mensajes programados salen en el ritmo que usted elija, sin que alguien tenga que recordar cada unidad.</p>
+          </article>
+          <article class="benefit">
+            <h3 class="lang-en">Careful with incomplete answers</h3>
+            <h3 class="lang-es">Cuidado con las respuestas incompletas</h3>
+            <p class="lang-en">If a reply is ambiguous, or only a state was given when a city is needed, the bot holds it for a person.</p>
+            <p class="lang-es">Si una respuesta es ambigua, o solo se indicó el estado cuando se necesita la ciudad, el bot la retiene para una persona.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="integrations" aria-labelledby="integrations-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker"><span class="lang-en">A custom setup</span><span class="lang-es">Una configuración a la medida</span></p>
+          <h2 id="integrations-title">
+            <span class="lang-en">We work with the way you already run.</span>
+            <span class="lang-es">Trabajamos con la forma en que usted ya opera.</span>
+          </h2>
+          <p class="section-lead lang-en">We connect to however your fleet already gets driver text messages, attach our bot, and integrate it into your system so your drivers and records stay updated. The exact connection is scoped for your operation — that’s why this is a custom setup, priced as a custom quote.</p>
+          <p class="section-lead lang-es">Nos conectamos a la forma en que su flota ya recibe los mensajes de texto de los conductores, instalamos nuestro bot y lo integramos a su sistema para que sus conductores y sus registros se mantengan actualizados. La conexión exacta se define para su operación; por eso es una configuración a la medida, con cotización personalizada.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="configure" aria-labelledby="configure-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker"><span class="lang-en">Configuration</span><span class="lang-es">Configuración</span></p>
+          <h2 id="configure-title">
+            <span class="lang-en">Set up to match the way you already work.</span>
+            <span class="lang-es">Se configura al modo en que usted ya trabaja.</span>
+          </h2>
+          <p class="section-lead lang-en">The bot is fitted to your operation — what is asked, when it is asked, and how carefully incomplete replies are handled.</p>
+          <p class="section-lead lang-es">El bot se ajusta a su operación: qué se pregunta, cuándo se pregunta, y con qué cuidado se tratan las respuestas incompletas.</p>
+        </div>
+        <div class="config-grid">
+          <article class="config-item">
+            <span class="config-mark" aria-hidden="true"></span>
+            <div>
+              <h3 class="lang-en">Check-in schedule</h3>
+              <h3 class="lang-es">Horario de seguimientos</h3>
+              <p class="lang-en">Days, times, and follow-ups — set to the cadence your fleet actually needs.</p>
+              <p class="lang-es">Días, horarios y recordatorios, ajustados al ritmo que su flota realmente necesita.</p>
+            </div>
+          </article>
+          <article class="config-item">
+            <span class="config-mark" aria-hidden="true"></span>
+            <div>
+              <h3 class="lang-en">What gets asked</h3>
+              <h3 class="lang-es">Qué se pregunta</h3>
+              <p class="lang-en">The wording of check-ins, and how status and location replies are read.</p>
+              <p class="lang-es">El texto de los seguimientos, y cómo se leen las respuestas de estatus y ubicación.</p>
+            </div>
+          </article>
+          <article class="config-item">
+            <span class="config-mark" aria-hidden="true"></span>
+            <div>
+              <h3 class="lang-en">Review queue</h3>
+              <h3 class="lang-es">Cola de revisión</h3>
+              <p class="lang-en">Unclear, incomplete, or multi-unit messages wait for a dispatcher instead of being guessed.</p>
+              <p class="lang-es">Los mensajes poco claros, incompletos o de varias unidades esperan a un despachador en lugar de adivinarse.</p>
+            </div>
+          </article>
+          <article class="config-item">
+            <span class="config-mark" aria-hidden="true"></span>
+            <div>
+              <h3 class="lang-en">English and Spanish</h3>
+              <h3 class="lang-es">Español e inglés</h3>
+              <p class="lang-en">Driver replies are read in both languages, without a separate process for each.</p>
+              <p class="lang-es">Las respuestas de los conductores se leen en ambos idiomas, sin un proceso aparte para cada uno.</p>
+            </div>
+          </article>
+          <article class="config-item">
+            <span class="config-mark" aria-hidden="true"></span>
+            <div>
+              <h3 class="lang-en">Confirm after every write</h3>
+              <h3 class="lang-es">Confirmar después de cada registro</h3>
+              <p class="lang-en">The record is read back after it is saved, so an update is only treated as done once it is in the system.</p>
+              <p class="lang-es">El registro se lee de vuelta después de guardarse, de modo que una actualización solo se da por hecha cuando ya está en el sistema.</p>
+            </div>
+          </article>
+          <article class="config-item">
+            <span class="config-mark" aria-hidden="true"></span>
+            <div>
+              <h3 class="lang-en">Safety rules</h3>
+              <h3 class="lang-es">Reglas de seguridad</h3>
+              <p class="lang-en">The bot does not invent a city or postal code when the driver only gave a state. If your system needs a signed-in session, writes wait until someone is signed in.</p>
+              <p class="lang-es">El bot no inventa una ciudad o un código postal cuando el conductor solo indicó el estado. Si su sistema necesita una sesión iniciada, las escrituras esperan hasta que alguien ingrese.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="wrap">
+        <div class="pricing-frame">
+          <div class="pricing-head">
+            <p class="kicker"><span class="lang-en">Pricing</span><span class="lang-es">Precios</span></p>
+            <h2 id="pricing-title">
+              <span class="lang-en">Custom quote.</span>
+              <span class="lang-es">Cotización personalizada.</span>
+            </h2>
+            <p class="section-lead lang-en">Every fleet’s setup is different, so we price carrier services as a custom quote after a demo.</p>
+            <p class="section-lead lang-es">La configuración de cada flota es distinta, por eso los servicios para transportistas se cotizan de forma personalizada después de una demostración.</p>
+          </div>
+          <a class="btn btn-dark pricing-cta" href="#contact">
+            <span class="lang-en">Request a demo</span>
+            <span class="lang-es">Solicitar una demostración</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+        <aside class="contact-aside">
+          <p class="kicker"><span class="lang-en">Contact</span><span class="lang-es">Contacto</span></p>
+          <h2 id="contact-title">
+            <span class="lang-en">Request a demo</span>
+            <span class="lang-es">Solicite una demostración</span>
+          </h2>
+          <p class="lang-en">Write to us and tell us a little about your fleet and how your desk gets driver updates. We will follow up by email.</p>
+          <p class="lang-es">Escríbanos y cuéntenos un poco sobre su flota y cómo su mesa recibe las actualizaciones de los conductores. Le responderemos por correo.</p>
+          <a class="contact-email" href="mailto:contacto@itqui.com.mx">contacto@itqui.com.mx</a>
+          <p class="place">Querétaro, México</p>
+        </aside>
+
+        <form class="form" id="demo-form" action="mailto:contacto@itqui.com.mx" method="post" enctype="text/plain">
+          <div class="field">
+            <label for="name"><span class="lang-en">Name</span><span class="lang-es">Nombre</span> <span class="req" aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="company"><span class="lang-en">Company</span><span class="lang-es">Empresa</span> <span class="req" aria-hidden="true">*</span></label>
+            <input id="company" name="company" type="text" autocomplete="organization" required>
+          </div>
+          <div class="field">
+            <label for="email"><span class="lang-en">Email</span><span class="lang-es">Correo</span> <span class="req" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="phone"><span class="lang-en">Phone <span style="text-transform:none;letter-spacing:0;color:var(--muted)">(optional)</span></span><span class="lang-es">Teléfono <span style="text-transform:none;letter-spacing:0;color:var(--muted)">(opcional)</span></span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="field full">
+            <label for="size"><span class="lang-en">Fleet size <span style="text-transform:none;letter-spacing:0;color:var(--muted)">(optional)</span></span><span class="lang-es">Tamaño de flota <span style="text-transform:none;letter-spacing:0;color:var(--muted)">(opcional)</span></span></label>
+            <input id="size" name="size" type="text" autocomplete="off">
+          </div>
+          <div class="field full">
+            <label for="message"><span class="lang-en">Message</span><span class="lang-es">Mensaje</span> <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="full form-actions">
+            <button class="btn btn-gold" type="submit">
+              <span class="lang-en">Send request</span>
+              <span class="lang-es">Enviar solicitud</span>
+            </button>
+            <p class="form-note lang-en">Opens your email app with the message addressed to contacto@itqui.com.mx.</p>
+            <p class="form-note lang-es">Abre su aplicación de correo con el mensaje dirigido a contacto@itqui.com.mx.</p>
+          </div>
+          <p class="form-status full" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <a href="index.html">
+        <img class="footer-lockup lang-en" src="assets/logo-lockup-en.png" width="582" height="570" alt="Itqui — Carrying your updates">
+        <img class="footer-lockup lang-es" src="assets/logo-lockup-es.png" width="613" height="575" alt="Itqui — Llevamos tus actualizaciones">
+      </a>
+      <div>
+        <p class="footer-meta lang-en">Itqui — from Nahuatl, “to carry.” Pronounced EET-kee.</p>
+        <p class="footer-meta lang-es">Itqui — del náhuatl, «llevar». Se pronuncia EET-kee.</p>
+        <p class="footer-meta">Querétaro, México · <a href="mailto:contacto@itqui.com.mx">contacto@itqui.com.mx</a></p>
+        <p class="footer-meta"><a href="index.html"><span class="lang-en">Owner-operator plans</span><span class="lang-es">Planes para transportistas independientes</span></a></p>
+      </div>
+      <p class="footer-legal">© 2026 Itqui</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
