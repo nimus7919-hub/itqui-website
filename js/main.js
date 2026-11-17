@@ -11,6 +11,8 @@
   var ogTitle = document.querySelector('meta[property="og:title"]');
   var ogDesc = document.querySelector('meta[property="og:description"]');
   var ogLocale = document.querySelector('meta[property="og:locale"]');
+  var ogLocaleAlt = document.querySelector('meta[property="og:locale:alternate"]');
+  var labelled = document.querySelectorAll("[data-aria-en]");
   var ogImage = document.querySelector('meta[property="og:image"]');
   var twTitle = document.querySelector('meta[name="twitter:title"]');
   var twDesc = document.querySelector('meta[name="twitter:description"]');
@@ -113,6 +115,11 @@
     if (ogTitle) ogTitle.setAttribute("content", t.title);
     if (ogDesc) ogDesc.setAttribute("content", t.og);
     if (ogLocale) ogLocale.setAttribute("content", t.locale);
+    if (ogLocaleAlt) ogLocaleAlt.setAttribute("content", lang === "es" ? "en_US" : "es_MX");
+    labelled.forEach(function (el) {
+      var label = el.getAttribute("data-aria-" + lang);
+      if (label) el.setAttribute("aria-label", label);
+    });
     if (ogImage) ogImage.setAttribute("content", t.image);
     if (twTitle) twTitle.setAttribute("content", t.title);
     if (twDesc) twDesc.setAttribute("content", t.og);
